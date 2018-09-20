@@ -19,7 +19,7 @@ p2 = GPIO.PWM(AN2, 100)                 # set pwm for M2
 channel_id = "486888"
 
 while True:
-    baseurl = ("https://api.thingspeak.com/channels/486888/fields/1/last#8221;")
+    baseurl = ("https://api.thingspeak.com/channels/XXXX/fields/1/last#8221;") #REPLACE YOUR CHANNEL ID ON XXXX
     state = requests.get(baseurl)
     print(state)
     if state.text == "10":
